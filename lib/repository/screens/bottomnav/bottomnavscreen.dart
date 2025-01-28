@@ -33,11 +33,11 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined,color: Colors.black,), label: 'Cart'),
         BottomNavigationBarItem(icon: Icon(Icons.dashboard_outlined,color: Colors.black,), label: 'Category'),
         BottomNavigationBarItem(icon: Icon(Icons.print_outlined,color: Colors.black,), label: 'Print'),
-      ],type: BottomNavigationBarType.fixed,currentIndex: CurrentIndex,onTap: (index){
+      ],onTap: (index){
         setState(() {
           CurrentIndex=index;
         });
-      },selectedItemColor: Colors.amber,iconSize:30,),
+      },type: BottomNavigationBarType.fixed,currentIndex: CurrentIndex, selectedItemColor: Colors.amber,iconSize:30,elevation: 10,backgroundColor: Colors.white,),
     );
   }
 }

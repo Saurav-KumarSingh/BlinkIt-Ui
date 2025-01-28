@@ -23,4 +23,24 @@ class UiHelper {
           color: color),
     );
   }
+  static CustomTextField({required TextEditingController controller}){
+    return Container(
+      height: 37,
+      width: 345,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: Colors.white,
+      ),
+      child: TextField(
+        controller: controller,
+        decoration: InputDecoration(
+          hintText: "Search 'ice-cream'",
+          prefixIcon: Icon(Icons.search),
+          suffixIcon: Icon(Icons.mic,color: Colors.black,),
+          border: InputBorder.none
+
+        ),
+      ),
+    );
+  }
 }

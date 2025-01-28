@@ -7,7 +7,7 @@ class CategoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('CategoryScreen'),
+        child: Text('Category Screen'),
       ),
     );
   }
