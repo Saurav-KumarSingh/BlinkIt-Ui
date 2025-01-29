@@ -21,6 +21,7 @@ class UiHelper {
           fontFamily: fontfamily ?? 'regular',
           fontWeight: fontweight,
           color: color),
+
     );
   }
   static CustomTextField({required TextEditingController controller}){
